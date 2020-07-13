@@ -1,5 +1,7 @@
 /*Styles for biosite2018*/
 
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
 * {
     padding:0;
     margin:0;
@@ -33,12 +35,17 @@ a:hover {
     color: #DD001A;
 }
 
+h2 {
+  font-weight: 600;
+}
+
 header {
     width: 95%;
+    max-width: 940px;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 1em;
     color: #707070;
 }
@@ -80,6 +87,7 @@ header li {
     padding-bottom: .41em;
     margin-right: 0;
     margin-left: 2em;
+
 }
 
 header a:hover {
@@ -248,6 +256,11 @@ section {
     border-bottom: 8px #FF6476 solid;
 }
 
+.selected2 {
+  color: #FF6476;
+  font-weight: 700;
+}
+
 .button {
     color: white;
     background-color: #FF6476;
@@ -282,7 +295,7 @@ section {
 
 .content {
     width: 95%;
-    max-width: 1000px;
+    max-width: 940px;
     display: flex;
     margin: auto;
     align-items: flex-start;
@@ -302,8 +315,7 @@ section {
     display: block;
     margin: 1em auto;
     text-transform: uppercase;
-    font-weight: 200;
-    font-size: 1.25rem;
+    text-align: center;
 }
 
 .thumbs {
@@ -630,9 +642,22 @@ section {
 }
 
 /* contact.html */
+.contact {
+  align-items: center;
+  margin-top: 2em;
+}
+
 #contact h1 {
     text-align: left;
     margin-left: 0;
+}
+
+#contact form {
+  margin: 0;
+}
+
+.contactImg {
+  margin: 0;
 }
 
 
@@ -651,7 +676,7 @@ section {
 
 
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 770px) {
     .comicThumb div {
         max-width: 500px;
     }
@@ -662,12 +687,16 @@ section {
         width: 95%;
     }
 
+    header {
+      justify-content: center;
+    }
+
     header h2 {
-        margin: 1em;
+        margin: .5em;
     }
 
     header li {
-        margin: 1em;
+        margin: 2em;
     }
 
     #intro figure {
@@ -677,6 +706,7 @@ section {
 
 /* smol bois */
 @media only screen and (max-width: 425px) {
+
     header li {
         margin: .5em;
     }
@@ -709,6 +739,7 @@ section {
 }
 
 @media only screen and (max-width: 320px) {
+
     header li {
         font-size: 1em;
     }
