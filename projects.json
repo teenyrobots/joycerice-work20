@@ -1,0 +1,231 @@
+{
+  "projects": [
+    {
+      "slug": "factitious",
+      "title": "Factitious",
+      "type": "Newsgame",
+      "button": "Play Factitious",
+      "link": "http://factitious.augamestudio.com/#/",
+      "client": "AU Game Lab",
+      "myRoles": "Game design, UX design, UI design",
+      "brief": "In the wake of the 2016 election, there was a huge discussion in the journalism community about how readers evaluate truth and trustworthiness in a news outlet. The client was interested in conducting a research project about readers’ ability to identify “truthiness” in a news story, and wanted to get as many plays as possible.",
+      "product": "Using game design principles, we designed an interface that made news story evaluation fun. Users were presented with a new story, and a Tinder-like swipe mechanic let them designate a story as “real” or “fake” news.",
+      "outcome": "Factitious was played over 1.6 million times in the first three days it was released and was covered in several major media outlets. The client was able to collect enough data for their own research, as well as ultimately making the core software available as an open source tool for playful polling systems.",
+      "coverage": [
+        {
+          "outlet": "npr",
+          "link": "https://www.npr.org/sections/ed/2017/07/03/533676536/test-your-fake-news-judgement-play-this-game",
+          "title": "To Test Your Fake News Judgment, Play This Game"
+        },
+        {
+          "outlet": "newsweek",
+          "link": "http://www.newsweek.com/fake-news-test-donald-trump-thinks-he-can-spot-fact-fiction-can-you-631626",
+          "title": "Fake News Test: Donald Trump Thinks He Can Spot Fact from Fiction. Can You?"
+        },
+        {
+          "outlet": "thenextweb",
+          "link": "https://thenextweb.com/shareables/2017/07/17/learn-to-spot-fake-news-with-this-tinder-style-browser-game/",
+          "title": "Learn to spot fake news with this Tinder-style browser game"
+        }
+      ],
+      "images": [
+          "Splash page",
+          "Articles drop in from the top",
+          "Swipe left for fake or right for news",
+          "User interface",
+          "Reports available on the backend",
+          "Alternate colorways",
+          "Early sketches"
+      ]
+    },
+    {
+      "slug": "cca",
+      "title": "Digital Comics Anthology",
+      "type": "Web app",
+      "button": "View the anthology",
+      "link": "http://comics.cca.edu/",
+      "client": "California College of the Arts",
+      "myRoles": "Web app design",
+      "brief": "Client was looking for a cohesive, visually interesting way to organize a large, disparate body of student work. This project was a ground-up redesign from a starter-site established during the beginning of their program. The final product would stand as the web centerpiece for the Comics MFA program at CCA.",
+      "product": "The digital anthology organizes comics by student and has a linkable section for each class. It sits on a backdrop of random student work, styled to align with CCA’s brand. Each comic has a unique URLs so graduated students can link to their work. We took a data-based approach when redesigning this web-app. Using a central data structure, the directory, student pages, and comic backgrounds are dynamically generated. As a result, the anthology is simple to update as new cohorts graduate.",
+      "outcome": null,
+      "coverage": null,
+      "images": [
+        "",
+        "Student work directory",
+        "Student thesis page",
+        "Thesis footer",
+        "Mobile site"
+      ]
+    },
+    {
+      "slug": "symbolia",
+      "title": "Symbolia Magazine",
+      "type": "Publication",
+      "button": "Read Symbolia",
+      "link": "https://itunes.apple.com/us/app/symbolia-magazine/id553786080?mt=8",
+      "client": null,
+      "myRoles": "Cofounder, Creative Director; Product design, User Interface design, Art direction, Art production",
+      "brief": "In 2012, Erin Polgreen invited me to join her new publication, Symbolia, as a cofounder. The project had been funded, but the product had not yet been designed beyond a proposal. The publication would be designed first for the iPad, and then adapted for other devices, and would assign, edit, and publish a new issue every other month.",
+      "product": "Symbolia ran bimonthly from 2012 until 2015 and published hundreds of pages of new non-fiction comics from contributors all over the world. It had over 3000 subscribers and on the iOS app store, Kindle Fire store, and as an interactive PDF.",
+      "outcome": null,
+      "coverage": [
+        {
+          "outlet": "huffpo",
+          "link": "https://www.huffingtonpost.com/2012/12/04/symbolia-tablet-magazine-_n_2235422.html",
+          "title": "Symbolia, Tablet Magazine, Brings Graphic Novel Style To Investigative Journalism"
+        },
+        {
+          "outlet": "fastco",
+          "link": "https://www.fastcompany.com/1682043/symbolia-tablet-magazine-aims-to-turn-news-into-a-comic",
+          "title": "Symbolia Tablet Magazine Aims To Turn News Into A Comic"
+        },
+        {
+          "outlet": "mtv",
+          "link": "http://www.mtv.com/news/2627385/symbolia-pdf/",
+          "title": "The Next Step of Comics Journalism with 'Symbolia'"
+        },
+        {
+          "outlet": "cjr",
+          "link": "https://archives.cjr.org/the_news_frontier/symbolia.php",
+          "title": "Hello to Symbolia: New iPad-only comics journalism magazine launches today"
+        }
+      ],
+      "images": [
+        "Symbolia was designed for iPad",
+        "Each issue ran 5-6 stories",
+        "Letter from the Creative Director",
+        "Letter from the Editor",
+        "Symbolia's editorial process",
+        "Symbolia sunsetted after 13 issues",
+        "",
+        ""
+      ]
+    },
+    {
+      "slug": "commuter",
+      "title": "Commuter Challenge",
+      "type": "Newsgame",
+      "button": "Play Commuter Challenge",
+      "link": "https://wamu.org/commuter-challenge/",
+      "client": "WAMU, Washington DC’s NPR affiliate",
+      "myRoles": "Game design, UI/UX design, Art Direction",
+      "brief": "When the local transit authority announced a complete train service overhaul, the client saw an opportunity to cover their transportation beat in a new way. As a companion piece to their new podcast, they wanted to produce a digital experience showing how the transit disruption was affecting low-income residents with little job flexibility.",
+      "product": "Journalist Maggie Farley conducted interviews at high traffic train stations, and from those interview we crafted an interactive narrative around a low-income parent trying to get to work and daycare pickups on time. Players navigate service delays, a short-tempered boss, and daycare late fees, trying to get through the week without going into debt or getting fired. The game was illustrated by Sarah Winifred Searle.",
+      "outcome": "Commuter Challenge brought over 6,000 new users to the client’s site. Local players praised the game for raising awareness about their struggle commuting in Washington DC.",
+      "coverage": [
+        {
+          "outlet": "citylab",
+          "link": "https://www.citylab.com/transportation/2017/01/can-your-budget-and-job-survive-the-washington-metro/514992/",
+          "title": "Can Your Budget and Job Survive the Washington Metro?"
+        },
+        {
+          "outlet": "technically",
+          "link": "https://technical.ly/dc/2017/02/03/wamu-commuter-challenge-game/",
+          "title": "WAMU made a game about commuting in DC and it’s so stressful"
+        },
+        {
+          "outlet": "ggwash",
+          "link": "https://ggwash.org/view/62220/try-to-get-to-work-on-time-in-this-great-commuting-game-from-wamu",
+          "title": "Try to get to work on time in this great commuting “game” from WAMU"
+        }
+      ],
+      "images": [
+        "",
+        "Players balance time and money",
+        "Being late can result in firing",
+        "Based on real DC transit disasters",
+        "Narrative as well as time choices",
+        "Built in open-source tool Twine",
+        ""
+      ]
+    },
+    {
+      "slug": "hurl",
+      "title": "Hurl the Harasser",
+      "type": "Newsgame",
+      "button": "Play Hurl the Harasser",
+      "link": "http://hurl.persuasiveplay.org/",
+      "client": null,
+      "myRoles": "Game design, User Interface design, Art production",
+      "brief": "Lindsay Grace, Maggie Farley, and I had 36 hours to develop and produce a news game at the University of Miami Newsjam. After an hour or so of brainstorming topical concepts, we landed on a game about sexual harassment in the entertainment industry.",
+      "product": "In Hurl the Harasser, a harasser stands at one end of a teeter totter. Bubble float onto the screen, which players tap to make the people inside “speak.” As people speak about their experiences, they are freed from their bubbles and land on the teeter-totter. When enough people speak out, the harasser is flung across the screen.",
+      "outcome": null,
+      "coverage": null,
+      "images": [
+        "Built with the newscycle",
+        "Harasser sits at one end",
+        "Tap the people to free them",
+        "Harasser can silence you",
+        "Critical mass hurls the harasser"
+      ]
+    },
+    {
+      "slug": "square",
+      "title": "Square Off",
+      "type": "Newsgame",
+      "button": "Play Square Off",
+      "link": "https://www.polygon.com/a/final-fantasy-7/battle-trivia",
+      "client": "Vox Media / Polygon",
+      "myRoles": "Game design, User interface design, Programming, Art direction",
+      "brief": "The Vox Media Storytelling Studio was working on the design for  Polygon.com’s oral history of Final Fantasy VII. The story, a very long prose piece, would be published on the game’s 20th anniversary. The team was interested in producing a game or playful module as a companion piece.",
+      "product": "Square Off is a trivia game about the development, lore, and fan culture of Final Fantasy VII. It uses an interface inspired by the Final Fantasy battle system and includes art inspired by the game. Much of the trivia was culled from the article, so reading the article improved player performance. Codeveloped with Cherisse Datu and Kelli Dunlap.",
+      "outcome": "On the day of publication, Square Off was the top page hit on Polygon.com (after the homepage). About 44 percent of readers clicked through from the story about Final Fantasy 7 to play the related game. ",
+      "coverage": [
+        {
+          "outlet": "storystudio",
+          "link": "https://storytelling.voxmedia.com/2017/1/30/14372688/gaming-for-news",
+          "title": "Gaming for news: What is it and why do we believe it can be important?"
+        }
+      ],
+      "images": [
+        "Square ran on Polygon.com",
+        "Players choose a trivia topic",
+        "FFVII inspired 'battle' system",
+        "Prompt to read article at the end",
+        "",
+        "Initial project sketch",
+        "First brainstorming session"
+      ]
+    },
+    {
+      "slug": "bbb",
+      "title": "Above & Beyond",
+      "type": "Infographics",
+      "button": "Read infographics",
+      "link": "https://blog.bedbathandbeyond.com/author/joyce-rice/",
+      "client": "Bed Bath & Beyond",
+      "myRoles": "Graphic design, data visualization",
+      "brief": "As part of their overall content strategy, client was interested in producing regular graphic content that would be relevant to their customers. These graphics would be published on their blog, Above & Beyond, and across social media channels with the goal of driving traffic to their online store.",
+      "product": "Over two years I designed dozens of graphics on various home and life style topics including kitchen tools, interior decorating, and holiday history.",
+      "coverage": null,
+      "outcome": null,
+      "images": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "slug": "ona",
+      "title": "ONA Conferences",
+      "type": "Event branding",
+      "button": null,
+      "link": null,
+      "client": "Online News Association",
+      "myRoles": "Collateral design, event branding",
+      "brief": "Client organizes an annual conference around digital news and media. The conference is held in a new city each year, and they produce an entirely new city-themed brand identity for each event.",
+      "product": "For the last three years, I’ve designed and illustrated the assets for booklets, schedules, maps, t-shirts, tote-bags, and more.",
+      "coverage": null,
+      "outcome": null,
+      "images": [
+        "2017, ONA DC",
+        "2016, ONA Denver",
+        "2016, finals and process"
+      ]
+    }
+  ]
+}

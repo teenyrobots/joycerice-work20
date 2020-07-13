@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joyce Rice is a designer</title>
+    <link rel="stylesheet" text="css" href="styles2.css">
+    <link href="sl/dist/simpleLightbox.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,400,400i, 600" rel="stylesheet">
+</head>
+
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+
+<div class="totalContainer">
+
+  <div class="mainContent">
+
+    <!--HERE IS THE HEADER-->
+    <header>
+        <a href="/">
+            <h1>joyce rice</h1>
+            <h2>design <span style="font-weight: 100;">et al.</span></h2>
+        </a>
+        <nav>
+            <ul>
+                <a href="work.html">
+                    <li>work</li>
+                </a>
+                <a href="https://shop.teenyrobots.net">
+                  <li>shop</li>
+                </a>
+               <a href="about.html">
+                    <li>about</li>
+               </a>
+                <a href="https://blog.teenyrobots.net/">
+                    <li>blog</li>
+                </a>
+                <a href="contact.html">
+                    <li>contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!--THAT'S IT FOR THE HEADER-->
+
+    <!--HERE IS THE PROJECT-->
+    <img src=null id="hero">
+    <div class="project">
+        <h1 id="projectName"></h1>
+
+        <div class="copy" id="projectCopy">
+            <h2 id="projectType"></h2>
+            <a href=null target="_blank" id="projectLink"><div class="button" id="projectButton"></div></a>
+            <h3>My roles:</h3>
+            <p id="projectRoles"></p>
+            <h3>Brief:</h3>
+            <p id="projectBrief"></p>
+            <h3>Product:</h3>
+            <p id="projectProduct"></p>
+        </div>
+
+        <a href="work.html">
+          <div class="button">
+            Back to projects
+          </div>
+        </a>
+    </div>
+    <!--OKAY PROJECT IS DONE-->
+
+  </div>
+
+  <!--HERE IS THE FOOTER-->
+  <div class='newFooter'>
+      <p>Thanks for visiting!</p>
+      <div>
+          <a href="https://www.instagram.com/teenyrobots/" target="_blank"><img src="assets/icons/grams.png" alt="instagram"></a>
+          <a href="https://twitter.com/teenyrobots" target="_blank"><img src="assets/icons/twitter.png" alt="twitter"></a>
+          <a href="https://github.com/teenyrobots" target="_blank"><img src="assets/icons/github.png" alt="github"></a>
+          <a href="mailto:joycer@teenyrobots.net?subject=Let's work together!" target="_blank"><img src="assets/icons/mail.png" alt="mail"></a>
+      </div>
+  </div>
+
+</div>
+
+<!--ALRIGHT THAT'S IT-->
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="sl/dist/simpleLightbox.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function makeProject(project) {
+        //Project Info
+        $('#hero').attr('src', '/projects/'+ project.slug +'/hero.jpg');
+        $('#projectName').append(project.title);
+        $('#projectType').append(project.type);
+        $('#projectLink').attr('href', project.link);
+        if (project.button) {
+          $('#projectButton').append(project.button)
+        } else {
+          console.log('no project button')
+          $('#projectButton').hide();
+        }
+        if (project.client) $('#projectLink').after('<h3>Client:</h3><p>'+project.client+'</p>');
+        $('#projectRoles').append(project.myRoles);
+        $('#projectBrief').append(project.brief);
+        $('#projectProduct').append(project.product);
+        if (project.outcome) $('#projectProduct').after('<h3>Outcomes:</h3><p>'+project.outcome+'</p>');
+
+        //SELECTED COVERAGE
+        if (project.coverage) {
+            var coverage = project.coverage;
+            $('#projectCopy').append('<h3>Selected Coverage:</h3><ul id="coverageList"></ul>');
+            for (var x=0; x<coverage.length; x++) {
+                console.log(coverage[x].outlet);
+                $('#coverageList').append('<li><img src="assets/logos/' + coverage[x].outlet + '.png"><a href="' + coverage[x].link + '" target="_blank">' + coverage[x].title + '</a></li>\n')
+            }
+        }
+
+        //Gallery
+        if (project.images) {
+            var allImages = project.images;
+            $('#projectCopy').after('<div class="thumbs" id="gallery"></div>');
+            $('#gallery').append('<h4>Gallery</h4>');
+            for (var x = 0; x < allImages.length; x++) {
+                console.log(allImages[x]);
+                $('#gallery').append('<a href="projects/' + project.slug + '/images/' + x + '.jpg" title="' + allImages[x] + '"><img src="projects/' + project.slug + '/thumbs/' + x + '.jpg"></a>');
+            }
+            $('#gallery a').simpleLightbox();
+        }
+    }
+
+    $(document).ready(function(){
+        var projectSlug = getParameterByName('project');
+
+        $.getJSON('projects.json', function(data) {
+            var allProjects = data.projects;
+
+            for (var x=0; x < allProjects.length; x++) {
+                if (allProjects[x].slug === projectSlug) {
+                    var currentProject = allProjects[x];
+                    var slug = currentProject.slug;
+                    break;
+                }
+            }
+            if (currentProject) {
+                makeProject(currentProject)
+            }
+        })
+    })
+
+</script>
+
+</body>

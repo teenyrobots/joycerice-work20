@@ -1,0 +1,723 @@
+/*Styles for biosite2018*/
+
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* *,
+*:before,
+*:after {
+    box-sizing: inherit;
+} */
+
+body {
+    position: relative;
+    /* padding-bottom: 8rem; */
+    min-height: 100%;
+}
+
+a {
+    color: #FF6476;
+}
+
+a:hover {
+    color: #DD001A;
+}
+
+header {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+    color: #707070;
+}
+
+header h2, ul, li {
+    display: inline-block;
+    margin: 1em;
+}
+
+header a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: #FF6476;
+    padding: .35em;
+    padding-top: .75em;
+    color: white;
+    font-weight: 600;
+}
+
+header h2 {
+    padding-bottom: .2em;
+    font-weight: 600;
+}
+
+header ul {
+    list-style-type: none;
+    margin-top: 1.25em;
+    margin-right: 0;
+    margin-left: 3.25em;
+}
+
+header li {
+    font-size: 1.15em;
+    margin-bottom: .25em;
+    padding-bottom: .41em;
+    margin-right: 0;
+    margin-left: 2em;
+}
+
+header a:hover {
+    color: #FF6476;
+}
+
+figcaption {
+    /*font-style: italic;*/
+    font-size: .75em;
+    text-align: left;
+    color: #707070;
+    margin-left: .5em;
+}
+
+hr {
+    margin-bottom: 1em;
+}
+
+form {
+    background-color: #E0E0E0;
+    padding: 1em;
+    margin: 1em;
+}
+
+form div {
+    padding: .5em 0;
+    width: 100%;
+}
+
+form textarea {
+    width: 100%;
+    height: 10em;
+    margin: .5em 0;
+    padding: .5em;
+    border: 0 none;
+    display: inline-block;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    height: 2em;
+    padding: .5em;
+    border: 0 none;
+}
+
+form h1 {
+    font-size: 1.25em;
+}
+
+form label {
+    margin: .1em;
+    font-weight: 200;
+    font-size: .85em;
+    display: inline-block;
+    padding-bottom: .25em;
+}
+
+input[type=submit] {
+    padding: .5em;
+    background: #FF6476;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+    color: white;
+    width: 7em;
+    height: 3em;
+    margin-bottom: .5em;
+    font-weight: 400;
+}
+
+/* good proper footer including other duck tape */
+
+.totalContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  /* max-width: 1000px; */
+  /* display: block;
+  margin: auto; */
+  margin-bottom: 2em;
+}
+
+.newFooter {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  font-size: .75em;
+  color: #707070;
+}
+
+.newFooter p {
+    padding-top: 2em;
+}
+
+.newFooter div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.newFooter div img {
+    width: 35px;
+    margin: 1em 2em;
+    opacity: .5;
+}
+
+.newFooter div img:hover, .newFooter div img:hover  {
+    opacity: 1;
+    border-bottom: .35em solid #FF6476;
+}
+
+
+/* sad bad footer */
+/*borrowed from chris bracco https://chrisbracco.com/css-sticky-footer-effect/*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    font-size: .75em;
+    color: #707070;
+}
+
+footer p {
+    padding-top: 2em;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+footer div img {
+    width: 35px;
+    margin: 1em 2em;
+    opacity: .5;
+}
+
+footer div img:hover, footer div img:hover  {
+    opacity: 1;
+    border-bottom: .35em solid #FF6476;
+}
+
+section {
+    max-width: 95%;
+}
+
+.selected {
+    border-bottom: 8px #FF6476 solid;
+}
+
+.button {
+    color: white;
+    background-color: #FF6476;
+    padding: .5em;
+    display: inline-block;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    margin: 1em 0 1.5em 0;
+    text-decoration: none;
+}
+
+.button:hover, .button-ultra:hover {
+    background-color: #DD001A;
+    color: white;
+}
+
+.button-ultra {
+    color: white;
+    background-color: #FF6476;
+    padding: 1em .5em;
+    display: inline-block;
+    margin: 1em 0;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.content {
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content div h1 {
+    margin: auto;
+    width: 94%;
+    text-align: left;
+    margin-bottom: .1em;
+}
+
+.content hr, .content #design, .content #comicsh2 {
+    width: 94%;
+    display: block;
+    margin: 1em auto;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.25rem;
+}
+
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 460px;
+    max-width: 100%;
+    margin: 3em 0 0 2em;
+    padding-left: 1.5em;
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #5e5e5e;
+}
+
+.thumbs img {
+    width: 200px;
+    height: 150px;
+    margin: 1em .5em 0;
+}
+
+.thumbs h4 {
+    width: 100%;
+    margin-left: 1em;
+    font-weight: 200;
+    font-style: italic;
+    font-size: .8em;
+}
+
+
+/*intro.html*/
+#intro {
+    width: 95%;
+    max-width: 1000px;
+    margin-top: 2em;
+    text-align: left;
+}
+
+#intro div, img {
+    display: block;
+    margin: 1em auto;
+    width: 375px;
+    max-width: 100%;
+}
+
+#intro img {
+    width: 550px;
+    margin-left: 0;
+}
+
+#intro h1, p {
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+/* about.html */
+.biopic {
+    width: 300px;
+    padding-top: .5em;
+    padding-bottom: 2em;
+    margin: 0;
+    margin-top: 1.5em;
+    margin-right: 2em;
+}
+
+
+/* Work.html */
+.projectThumb {
+    display: block;
+    margin: 1em auto;
+    width: 450px;
+    position: relative;
+}
+
+.projectThumb a {
+    color: black;
+}
+
+.projectThumb a:hover {
+    color: #FF6476;
+}
+
+.projectThumb img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.projectThumb a:hover img {
+    opacity: .85;
+}
+
+.projectThumb h2 {
+    position: absolute;
+    left: .25em;
+}
+
+.projectThumb h3 {
+    font-weight: 200;
+    font-style: italic;
+    position: absolute;
+    right: .25em;
+    top: .3em;
+}
+
+#wrong {
+    display: none;
+    margin: 3em;
+    width: 1000px;
+    text-align: center;
+}
+
+#comics {
+    margin-bottom: 3em;
+}
+
+
+/*project.html*/
+.project {
+    max-width: 950px;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.project h1 {
+    color: white;
+    padding: .5em 0;
+    margin-top: -2em;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight:600;
+    width: 100%;
+}
+
+.project h2 {
+    font-weight:200;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+}
+
+.project h3 {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 1.5em 0 .25em 0;
+    border-width: 1px;
+    color: black;
+}
+
+.project h3:first-of-type {
+    margin: 0;
+}
+
+#hero {
+    width: 100%;
+    /*min-height: 200px;*/
+    margin: 0;
+}
+
+#hero2 {
+    width: 100%;
+    height: 25vw;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#hero2 img {
+    width: 100%;
+    height: 25vw;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+#hero2 .overlay {
+    width: 100%;
+    height: 25vw;
+    position: absolute;
+    background: linear-gradient(rgba(255,0,0,0) 15%, rgba(0,0,0,1) 75%);
+    opacity: .6;
+}
+
+#hero2 .title {
+    width: 95%;
+    max-width: 850px;
+    display: block;
+    margin: auto;
+}
+
+#hero2 h1 {
+    color: white;
+    position: absolute;
+    bottom: .25em;
+    font-size: 2.5em;
+}
+
+.copy {
+    width: 450px;
+    max-width: 95%;
+    /*padding-right: 2em;*/
+    /*margin-right: 2em;*/
+}
+
+.copy p, h2 {
+    margin: 0 0 1em;
+}
+
+.copy ul {
+    margin: .5em 0 0 0;
+    list-style-type: none;
+}
+
+.copy li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.copy li img {
+    padding-right: 1em;
+    padding-top: .25em;
+    width: 120px;
+}
+
+/*journalism.html*/
+.comicThumb {
+    width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.comicThumb img {
+    width: 100%;
+    max-width: 500px;
+    padding: .5em .5em .5em 0;
+    margin: 0;
+}
+
+.comicThumb div {
+    width: 100%;
+    max-width: 350px;
+    margin-top: .5em;
+    padding: 0 .5em;
+}
+
+.comicThumb h2 {
+    margin: 0 0 .5em 0;
+    text-align: left;
+}
+
+.comicProject {
+    max-width: 850px;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.comicProject h1 {
+    color: white;
+    padding: .5em 0;
+    margin-top: -2em;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight:600;
+    width: 100%;
+}
+
+.comicProject h2 {
+    font-weight:400;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.comicProject h3 {
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0 0 1.25em 0;
+    border-width: 1px;
+    color: black;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.comicProject a {
+    background-color: #FF6476;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    margin-left: -.2em;
+}
+
+.comicProject a:hover {
+    background-color: #DD001A;
+}
+
+.comicProject p {
+    margin: 1em;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+}
+
+.comicPage {
+    width: 95%;
+    max-width: 900px;
+}
+
+/* contact.html */
+#contact h1 {
+    text-align: left;
+    margin-left: 0;
+}
+
+
+@media only screen and (max-width: 957px) {
+    .thumbs {
+        padding: 1em 0 0 0;
+        border-style: solid none none none;
+        margin: auto;
+    }
+
+    header ul {
+        margin: 1em 0;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 895px) {
+    .comicThumb div {
+        max-width: 500px;
+    }
+
+    .project h1 {
+        font-size: 2.5em;
+        margin-bottom: -.5em;
+        width: 95%;
+    }
+
+    header h2 {
+        margin: 1em;
+    }
+
+    header li {
+        margin: 1em;
+    }
+
+    #intro figure {
+        margin: auto;
+    }
+}
+
+/* smol bois */
+@media only screen and (max-width: 425px) {
+    header li {
+        margin: .5em;
+    }
+
+    header h1, h2 {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .project h1 {
+        margin-bottom: -1em;
+    }
+
+    #hero2 .overlay {
+        background: linear-gradient(rgba(0,0,0,.5) 15%, rgba(0,0,0,1) 75%);
+        opacity: .7;
+    }
+
+    .thumbs {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .thumbs img {
+        display: block;
+        margin: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    header li {
+        font-size: 1em;
+    }
+
+    #hero2 h1 {
+        font-size: 2em;
+    }
+
+    .newFooter div img {
+        margin: 1em 1em;
+    }
+}
